@@ -24,4 +24,14 @@ public class MyRange {
     public boolean commaRangeSymbol() {
         return input.contains(",");
     }
+
+    public void validate() {
+        // Fail Test
+        if (!input.startsWith("[") && !input.startsWith("(")) {
+            throw new InputInvalidException("Input error");
+        }
+
+        //  ok
+
+    }
 }
