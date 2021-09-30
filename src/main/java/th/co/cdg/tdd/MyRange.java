@@ -20,4 +20,8 @@ public class MyRange {
         }
         return start - (ASCII_CODE_1 - 1);
     }
+
+    public boolean commaRangeSymbol() {
+        return input.contains(",");
+    }
 }
