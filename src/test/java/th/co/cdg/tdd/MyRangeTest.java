@@ -67,6 +67,18 @@ public class MyRangeTest {
         assertTrue(result, "สัญลักษณ์ช่วงต้องเป็น ,");
     }
 
+    @Test
+    @DisplayName("ตัวที่สามจะต้องใช้ , input = [1-5] result = false")
+    public void case6() {
+        // Arrange
+        String input = "[1-5]";
+        MyRange range = new MyRange(input);
+        // Act
+        boolean result = range.commaRangeSymbol();
+        // Assert
+        assertFalse(result);
+    }
+
 
 
 
