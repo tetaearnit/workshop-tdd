@@ -25,13 +25,13 @@ public class RegisterBusiness {
                         throw new SpeakerDoesntMeetRequirementsException("Speaker doesn't meet our standard rules.");
                     }
                 } else {
-                    throw new badcode.ArgumentNullException("Email is required.");
+                    throw new ArgumentNullException("Email is required.");
                 }
             } else {
-                throw new badcode.ArgumentNullException("Last name is required.");
+                throw new ArgumentNullException("Last name is required.");
             }
         } else {
-            throw new badcode.ArgumentNullException("First name is required.");
+            throw new ArgumentNullException("First name is required.");
         }
 
         return speakerId;
